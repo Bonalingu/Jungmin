@@ -1,0 +1,258 @@
+body {
+	margin: none !important;
+	background: rgb(255, 233, 143);
+	color: black;
+	
+}
+
+span {
+	display: inline;
+	font-family: notyet;
+	/*font-weight: regular;*/
+	font-size: 25pt;
+}
+
+a {
+	transition: 0.5s;
+}
+
+nav {
+	position: fixed;
+	top: 10px;
+	left: 50vw;
+	transform: translate(-50%, 0);
+	color: white;
+}
+
+canvas {
+	position: absolute;
+	top: 150px;
+	left: 10px;
+}
+
+#container {
+	transition: 0.5s;
+	width: 95vw;
+	margin: none;
+	float: left;
+	/*background-image: url(rsc/ㅎㅎ.jpg);*/
+	/*background-blend-mode: multiply;*/
+}
+
+
+
+.selected {
+	font-family: notyet;
+	font-size: 25pt;
+	stroke: 2px;
+	text-shadow: 0 0 2em black;
+	cursor: help;
+	letter-spacing: 2pt;
+	position: relative;
+	display: inline;
+	margin-left: 6vw;
+	margin-right: 6vw;
+	width: 45vw;
+	transition: .3s;
+}
+
+
+
+.page {
+	position: relative;
+	display: none;
+	margin-top: 100px;
+	/*top: 25vh;*/
+	/*left: 0px;*/
+	width: 100vw;
+	/*transition: 1s;*/
+	/*background: white;*/
+	/*color: dodgerBlue;*/
+	box-shadow: 1px, DodgerBlue;
+
+}
+
+#about {
+	/*background: red;*/
+}
+
+#work {
+	/*background: green;*/
+}
+
+#info {
+	/*background: black;*/
+}
+
+#info_detail {
+	font-size: 75pt;
+}
+
+.contacts {
+	font-family: fantasy;
+	font-size: 50pt;
+	line-height: 1em;
+}
+
+.projects {
+	/*display: inline;*/
+	height: : 40vh;
+	padding: 10px;
+	/*margin-bottom: 50px;*/
+	font-family: fantasy;
+	/*font-weight: bolder;*/
+	letter-spacing: 1px;
+	text-align: left;
+	overflow-x: scroll;
+}
+.projects > p {
+	display: inline;
+	overflow-x: hidden;
+}
+
+.project_text {
+	font-family: fantasy;
+	font-weight: lighter;
+	line-height: 1pt;
+	color: black;
+}
+
+.work_img {
+	transition: 0.2s;
+	width: 250px;
+	/*padding: 10px;*/
+	margin: none;
+	display: inline;
+}
+
+.wide_img {
+	
+	/*box-shadow: 1px -60px 10px black;*/
+	display: block;
+	position: fixed;
+	bottom: 50vh;
+	left: 50vw;
+	transform: translate(-50%, 50%);
+	max-width: 100vw;
+	height: 100vh;
+	width: auto;
+	max-height: 110vh;
+
+}
+/*
+.work_img:hover {
+	width: 500px;
+}*/
+
+#intro_text {
+	/*position: absolute;*/
+	/*top: -25vh;*/
+	/*left: 0px;*/
+	margin: none !important;
+	font-size: 200pt;
+	letter-spacing: -60pt;
+	font-family: bro;
+	font-weight: regular !important;
+	text-decoration: none;
+	text-align: center;
+	baseline-shift: 2em;
+	line-height: .21em;
+	/*hyphens: auto;*/
+}
+#intro_text:visited, #intro_text:link {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+a:-webkit-any-link {
+	color: white;
+	text-decoration: none;
+}
+
+.hover:hover, .selected:hover {
+	font-weight: bolder;
+}
+
+.hide {
+	display: none;
+}
+
+@media screen and (max-width: 650px) {
+	body {
+	background: white;
+	color: black;
+	
+	}
+
+  #intro_text {
+  	font-size: 80pt;
+  	letter-spacing: -15pt;
+  	/*color: orange;*/
+  	line-height: 0.7em;
+  }
+
+	.hover:after, .hover:active {
+		font-weight: bold;
+	}
+
+	.projects {
+	/*display: inline;*/
+		width: 95vw;
+	}
+
+	.project_text {
+		color: black;
+	}
+
+
+
+	#work {
+	/*background: green;*/
+	}
+
+	.work_img {
+	width: 380px;
+	}
+
+	.wide_img {
+	transition: none;
+	display: block;
+	position: fixed;
+	bottom: 50vh;
+	left: 50vw;
+	transform: translate(-50%, 50%);
+	max-width: 130vw;
+	width: 110vw;
+	height: auto;
+	max-height: 110vh;
+
+}
+
+	#info {
+		/*background: orange;*/
+		color: orange;
+	}
+
+	#info_detail {
+	font-size: 45pt;
+}
+
+
+}
+
+
+/*font uploading*/
+@font-face {
+  font-family: "notyet";
+  src: url("rsc/NotyetSunrise.woff2") format("woff2"),
+       url("rsc/NotyetSunrise.woff") format("woff");
+}
+
+@font-face {
+  font-family: "bro";
+  src: url("rsc/Brojection-Regular.woff2") format("woff2"),
+       url("rsc/Brojection-Regular.woff") format("woff");
+}
+
